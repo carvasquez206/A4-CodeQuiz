@@ -3,7 +3,7 @@ JavaScript Quiz
 
 ## Task
 
-Create Quiz timed coding quiz with multiple choice questions.
+Create timed coding quiz with multiple choice questions.
 Website Should have:
 - dynamic HTML/CSS
 - stores high scores
