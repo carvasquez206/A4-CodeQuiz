@@ -39,5 +39,21 @@ ul li label{
     cursor:pointer;
 }
 button{
-    background-color: aliceblue;
+    background-color: rgb(219, 209, 71);
+    color: black;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+button:focus{
+    outline:none;
+    background-color: teal;
 }
