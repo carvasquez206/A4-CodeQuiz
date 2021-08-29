@@ -1,102 +1,97 @@
-const data = [
+const quizData = [
     {
-        question: "Who is Mike Jones?",
-        a:'who',
-        b: 'who',
-        c: 'Mike Jones',
-        d: 'President of the US',
-        correct: 'Mike Jones', 
-    },
-    {
-        question: "What is 30*3?",
-        a:'fish',
-        b: 'potatoes',
-        c: '90',
-        d: '4',
-        correct: "a",
-    },
-    {
-        question: "What is 2+2?",
-        a:'fish',
-        b: 'potatoes',
-        c: '4',
-        d: '4',
-        correct: '4', 
-    },
-    {
-        question: "What is 2+2?",
-        a:'fish',
-        b: 'potatoes',
-        c: '4',
-        d: '4',
-        correct: '4', 
-    },
-]
+    question: "who?",
+    a: "who",
+    b: "who",
+    c: "who",
+    d: "Mike Jones",
+    correct: "d"
+},
+{
+    question: "What does HTML stand for?",
+    a: "Hypertext Markup Language",
+    b: "Cascading Style Sheet",
+    d: "Helicopters Terminals Motorboats Lamborginis",
+    c: "JSon Object Notation",
+    correct: "a",
+},
+{
+    question: "coming straight outta, where?",
+    a: "Compton",
+    b: "who",
+    c: "who",
+    d: "Compton",
+    correct: "d"
+},
+{
+    question: "who?",
+    a: "who",
+    b: "who",
+    c: "who",
+    d: "Mike Jones",
+    correct: "d"
+},
 
-/* good from here on*/
-const quiz = document.getElementById("Quiz")
-const uestionE1s = document.querySelectorAll(".answer")
-const questionE1 = document.getElementById("question")
-const optionA = document.getElementById("optionA")
-const optionB = document.getElementById("optionB")
-const optionC = document.getElementById("optionC")
-const optionD = document.getElementById("optionD")
 
-const submitBtn = document.getElementById("submit")
+];
 
-let currentQuiz = 0
-let score = 0
+const answerEls = document.querySelectorAll('quiz');
 
-loadQuiz()
+const questionEl = document.getElementById('question');
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+const submitBtn = document.getElementById('submit');
 
-/*so that text changes */
-function loadQuiz(){
-    deselectAnswers()
+let currentQuiz = 0;
+let score = 0;
 
-    const currentQuizData = data[currentQuiz]
 
-    questionE1.innerText = currentQuizData.question
-    
-    optionA.innerText = currentQuizData.a
-    optionB.innerText = currentQuizData.b
-    optionC.innerText = currentQuizData.c
-    optionD.innerText = currentQuizData.d 
+loadQuiz();
+function loadQuiz() {
+
+    deselectAnswers();
+const currentQuizData = quizData[currentQuiz];
+    questionEl.innerText = currentQuizData.question;
+a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+}
+function getSelected() {
+
+    let answer = undefined;
+answerEls.forEach((answerEl) => {
+        if (answerEl.checked) {
+        answer = answerEl.id;
+        }
+    });
+return answer;
 }
 
-function deselectAnswers(){
-    answerE1S.forEach((answerE1) => {
-        answerE1.checked = false
-    })
+function deselectAnswers() {
+answerEls.forEach((answerEl) => {
+        answerEl.checked = false;
+});
 }
 
-funtion getSelect(){
-    let answer
-
-    answerE1S.forEach((answerE1) => {
-        if(answerE1.checked){
-        answer = answerE1.id
-        }
-    })
-
-    return answer
-}0
-
-submitBtn.addEventListener("click"), () => {
-    const answer = getSelected()
-
-    if(answer) {
-        if(answer === data[currentQuiz].correct){
-            score++
-        }
-        currentQuiz++
-        if(currentQuiz < data.length) {
-            loadQuiz
-        }
-        else {
+submitBtn.addEventListener("click", () => {
+// check to see the answer
+    const answer = getSelected();
+if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
+        score++;
+    }
+        currentQuiz++;
+    if (currentQuiz < quizData.length) {
+            loadQuiz();
+    } else {
             quiz.innerHTML = `
-            
-            <h2>You Answered ${score}/${data.legth} Questions Correctly</h2>
-            <button onclick="loaction.reload()">Do it Again</button>`
+            <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+                
+                <button onclick="location.reload()">Reload</button>
+            `;
         }
-    }       
-})
+    }
+});
