@@ -29,6 +29,7 @@ THEN I can save my initials and my score
 - https://carvasquez206.github.io/A4Quiz/
 
 ## Screenshot
+![_Users_carlosvasquez_Desktop_A4Quiz_index html](https://user-images.githubusercontent.com/63617482/131236901-3b322b8d-7389-4747-a0b8-fb6981b3c369.png)
 
 
 ## Review
