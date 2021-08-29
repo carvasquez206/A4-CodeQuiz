@@ -1,3 +1,17 @@
+/*timer*/
+var count = 600;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    // or...
+    alert("Sorry! You're out of time!");
+  }
+}, 1000);
+
+/*Quiz*/   
 const quizData = [
 {
     question: "Did Soulja Boy discover America?",
@@ -35,7 +49,8 @@ const quizData = [
 
 ];
 
-const answerEls = document.querySelectorAll('quiz');
+const quiz = document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer');
 
 const questionEl = document.getElementById('question');
 const a_text = document.getElementById('a_text');
@@ -59,8 +74,8 @@ const currentQuizData = quizData[currentQuiz];
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
 }
-function getSelected() {
 
+function getSelected() {
     let answer = undefined;
 answerEls.forEach((answerEl) => {
         if (answerEl.checked) {
@@ -77,18 +92,19 @@ answerEls.forEach((answerEl) => {
 }
 
 submitBtn.addEventListener("click", () => {
-// check to see the answer
     const answer = getSelected();
 if (answer) {
         if (answer === quizData[currentQuiz].correct) {
-        score++;
+        score++
+
     }
-        currentQuiz++;
+
+        currentQuiz++
     if (currentQuiz < quizData.length) {
             loadQuiz();
     } else {
             quiz.innerHTML = `
-            <h2>You answered correctly at ${score}/${quizData.length} questions.</h2>
+            <h2>You answered correctly at ${score}/${quizData.length} questions correctly.</h2>
                 
                 <button onclick="location.reload()">Reload</button>
             `;
