@@ -11,52 +11,62 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles.css"/>
 </head>
 <body>
-    <!--header-->
+    <!--header
     <header>
         <h1>Coding Quiz Challenge</h1>
-        <!--image so it doesn't look bland-->
+        image so it doesn't look bland
         <a><img id="img" src="./assets/images/javaScript-image.png" alt="JavaScript Logo"></a>
-    </header>
+    </header>-->
     <br>
 
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
+            <h2 id="question">JavaScript Quiz</h2>
             <ul>
                 <li>
-                    <input class="answer" type="radio">
-                    <label for="a" id="optionA">Option A</label>
+                    <input class="answer" type="radio" name="answer" id="a">
+                    <label for="a" id="A_text">Answer</label>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <input class="answer" type="radio">
-                    <label for="b" id="optionB">Option B</label>
+                    <input class="answer" type="radio" name="answer" id="b">
+                    <label for="b" id="B_text">Answer</label>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <input class="answer" type="radio">
-                    <label for="c" id="optionB">Option C</label>
+                    <input class="answer" type="radio" name="answer" id="c">
+                    <label for="c" id="C_text">Answer</label>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <input class="answer" type="radio">
-                    <label for="d" id="optionD">Option D</label>
+                    <input class="answer" type="radio" name="answer" id="d">
+                    <label for="d" id="D_text">Answer</label>
                 </li>
             </ul>
         </div>
 
-    <!--submit button-->
-    <button id="submit">Submit</button>
+        <!--submit button-->
+        <button id="submit">Submit</button>
 
     </div>
 
-    <!--footer-->
+    <!--script link-->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--footer
     <footer>
         <h4>&copy; 2021 Carlos Vasquez, Inc.</h4>
     </footer>
-    <!--script link-->
-    <script src="script.js"></script>
-</body>
-</html>
+    -->
