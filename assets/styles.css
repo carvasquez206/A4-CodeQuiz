@@ -2,17 +2,27 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(206, 191, 179);
-    
+    background-color: rgb(245, 231, 219); 
+    text-align: center; 
 }
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}
+
 #img {
     width: 500px;
 }
+
 #submit {
 font-family: 'Times New Roman', Times, serif;
 color: black;
 background-color: gainsboro;
 }
+
 #submit:hover {
     color: white;
     background-color: /*rgb(155, 9, 9)*/ black;
