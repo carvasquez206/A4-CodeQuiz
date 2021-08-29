@@ -1,5 +1,5 @@
-/*timer*/
-var count = 600;
+/*timer to 10 minutes*/
+var count = 180;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
   count--;
@@ -11,13 +11,13 @@ var interval = setInterval(function(){
   }
 }, 1000);
 
-/*Quiz*/   
+/* Quiz questions/info */   
 const quizData = [
 {
     question: "Did Soulja Boy discover America?",
-    a: "Of course!",
+    a: "Drake stole his whole flow too",
     b: "Big Facts!",
-    c: "Drake stole his whole flow too",
+    c: "Turned its Swag on",
     d: "All the above",
     correct: "d",
 },
@@ -30,25 +30,26 @@ const quizData = [
     correct: "a",
 },
 {
-    question: "who?",
-    a: "who",
-    b: "who",
-    c: "who",
+    question: "Where is the correct place to insert a JavaScript tag?",
+    a: "the Body section",
+    b: "the Head section",
+    c: "Mississippi",
     d: "Mike Jones",
-    correct: "d"
+    correct: "a"
 },
 {
-    question: "What does HTML stand for?",
-    a: "Hypertext Markup Language",
-    b: "Cascading Style Sheet",
-    c: "Helicopters Terminals Motorboats Lamborginis",
-    d: "JSon Object Notation",
-    correct: "a",
+    question: "Inside which HTML element do we put the JavaScript?",
+    a: "Js",
+    b: "JavaScript",
+    c: "script",
+    d: "scripting",
+    correct: "c",
 },
 
 
 ];
 
+/* setting the const variables */
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer');
 

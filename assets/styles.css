@@ -57,3 +57,7 @@ button:focus{
     outline:none;
     background-color: teal;
 }
+
+h3{
+ float: right;
+}
