@@ -79,7 +79,7 @@ funtion getSelect(){
     })
 
     return answer
-}
+}0
 
 submitBtn.addEventListener("click"), () => {
     const answer = getSelected()
