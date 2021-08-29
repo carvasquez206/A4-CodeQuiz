@@ -14,22 +14,49 @@
     <!--header-->
     <header>
         <h1>Coding Quiz Challenge</h1>
-        <!--image as placeholder-->
-        <a><img id="img" src="./assets/images/seattle-grunge.jpg" alt="seattle-grunge"></a>
+        <!--image so it doesn't look bland-->
+        <a><img id="img" src="./assets/images/javaScript-image.png" alt="JavaScript Logo"></a>
     </header>
     <br>
-    <!--dquiz will show up in this div-->
-    <div id="quiz"></div>
+
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <ul>
+                <li>
+                    <input class="answer" type="radio">
+                    <label for="a" id="optionA">Option A</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input class="answer" type="radio">
+                    <label for="a" id="optionA">Option B</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input class="answer" type="radio">
+                    <label for="a" id="optionA">Option C</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input class="answer" type="radio">
+                    <label for="a" id="optionA">Option D</label>
+                </li>
+            </ul>
+        </div>
+
     <!--submit button-->
     <button id="submit">Submit</button>
-    <!--results-->
-    <div id="results"></div>
+    </div>
+
 
     <!--footer-->
     <footer>
         <h4>&copy; 2021 Carlos Vasquez, Inc.</h4>
     </footer>
     <!--script link-->
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

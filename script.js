@@ -1,4 +1,4 @@
-var Questions = [
+const data = [
 {
     question: "What is 2+2?",
     answers: {
@@ -17,4 +17,6 @@ var Questions = [
 },
    correctAnswer: '90' 
 }
-];
+]
+
+const quiz
