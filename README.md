@@ -29,7 +29,10 @@ THEN I can save my initials and my score
 - https://carvasquez206.github.io/A4Quiz/
 
 ## Screenshot
-![_Users_carlosvasquez_Desktop_A4Quiz_index html (1)](https://user-images.githubusercontent.com/63617482/131239979-a00289c9-d959-4e89-9b6d-20d80fe94561.png)
+![_Users_carlosvasquez_Desktop_A4Quiz_index html (2)](https://user-images.githubusercontent.com/63617482/131242763-57ee1e3f-236e-4e2f-9eb4-018d7c8e46a1.png)
+
+![_Users_carlosvasquez_Desktop_A4Quiz_index html (4)](https://user-images.githubusercontent.com/63617482/131242829-656f9e78-c311-4e81-a635-285fdb5337d0.png)
+
 
 
 
