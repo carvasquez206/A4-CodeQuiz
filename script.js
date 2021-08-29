@@ -1,5 +1,21 @@
 const quizData = [
-    {
+{
+    question: "Did Soulja Boy discover America?",
+    a: "Of course!",
+    b: "Big Facts!",
+    c: "Drake stole his whole flow too",
+    d: "All the above",
+    correct: "d",
+},
+{
+    question: "What does HTML stand for?",
+    a: "Hypertext Markup Language",
+    b: "Cascading Style Sheet",
+    c: "Helicopters Terminals Motorboats Lamborginis",
+    d: "JSon Object Notation",
+    correct: "a",
+},
+{
     question: "who?",
     a: "who",
     b: "who",
@@ -11,25 +27,9 @@ const quizData = [
     question: "What does HTML stand for?",
     a: "Hypertext Markup Language",
     b: "Cascading Style Sheet",
-    d: "Helicopters Terminals Motorboats Lamborginis",
-    c: "JSon Object Notation",
+    c: "Helicopters Terminals Motorboats Lamborginis",
+    d: "JSon Object Notation",
     correct: "a",
-},
-{
-    question: "coming straight outta, where?",
-    a: "Compton",
-    b: "who",
-    c: "who",
-    d: "Compton",
-    correct: "d"
-},
-{
-    question: "who?",
-    a: "who",
-    b: "who",
-    c: "who",
-    d: "Mike Jones",
-    correct: "d"
 },
 
 
@@ -41,7 +41,7 @@ const questionEl = document.getElementById('question');
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
-const d_text = document.getElementById('d_text');
+const d_text = document.getElementById('d_text');   
 const submitBtn = document.getElementById('submit');
 
 let currentQuiz = 0;
@@ -54,9 +54,9 @@ function loadQuiz() {
     deselectAnswers();
 const currentQuizData = quizData[currentQuiz];
     questionEl.innerText = currentQuizData.question;
-a_text.innerText = currentQuizData.a;
+    a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
-c_text.innerText = currentQuizData.c;
+    c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
 }
 function getSelected() {
