@@ -25,6 +25,9 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
+## Link to Repository
+- https://github.com/carvasquez206/A4-CodeQuiz
+
 ## Link to Website
 - https://carvasquez206.github.io/A4Quiz/
 
