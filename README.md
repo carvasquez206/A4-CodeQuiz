@@ -29,7 +29,7 @@ THEN I can save my initials and my score
 - https://github.com/carvasquez206/A4-CodeQuiz
 
 ## Link to Website
-- https://carvasquez206.github.io/A4Quiz/
+- https://carvasquez206.github.io/A4-CodeQuiz/
 
 ## Screenshot
 ![_Users_carlosvasquez_Desktop_A4Quiz_index html (2)](https://user-images.githubusercontent.com/63617482/131242763-57ee1e3f-236e-4e2f-9eb4-018d7c8e46a1.png)
