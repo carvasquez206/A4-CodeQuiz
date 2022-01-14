@@ -1,4 +1,4 @@
-# A4Quiz
+# CodeQuiz-JavaScript
 JavaScript Quiz
 
 ## Task
