@@ -1,5 +1,5 @@
 # CodeQuiz-JavaScript
-JavaScript Quiz
+Short quiz created using basic JavaScript
 
 ## Task
 
