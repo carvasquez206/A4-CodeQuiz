@@ -9,7 +9,7 @@ Website Should have:
 - stores high scores
 - clean looking/polished
 
-## Acceptance Criteria
+## Criteria
 
 ```
 GIVEN I am taking a code quiz
@@ -35,14 +35,3 @@ THEN I can save my initials and my score
 ![_Users_carlosvasquez_Desktop_A4Quiz_index html (2)](https://user-images.githubusercontent.com/63617482/131242763-57ee1e3f-236e-4e2f-9eb4-018d7c8e46a1.png)
 
 ![_Users_carlosvasquez_Desktop_A4Quiz_index html (4)](https://user-images.githubusercontent.com/63617482/131242829-656f9e78-c311-4e81-a635-285fdb5337d0.png)
-
-
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
